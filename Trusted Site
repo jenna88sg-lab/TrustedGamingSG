@@ -1,0 +1,185 @@
+Put your HTML text here<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>SG FUN GAMES - Premium Edition</title>
+  <style>
+    :root {
+      --neon1: #ff2bf0;
+      --warning: #ffcc00;
+      --alert: #ff0000;
+      --dark: #07000b;
+      --radius: 18px;
+      font-family: Inter, system-ui, Arial;
+    }
+    body {
+      margin: 0;
+      background: var(--dark);
+      color: #fff;
+      overflow-x: hidden;
+    }
+    /* SLIDER */
+    .slider {
+      position: relative;
+      height: 380px;
+      overflow: hidden;
+    }
+    .slide {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      opacity: 0;
+      transition: opacity 1.5s;
+      filter: brightness(.55) saturate(130%);
+    }
+    .slide.active { opacity: 1; }
+    /* HERO */
+    .hero-text {
+      position: absolute;
+      inset: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+    }
+    .hero-text h1 {
+      font-size: 40px;
+      margin-bottom: 10px;
+      background: linear-gradient(90deg, var(--neon1), var(--warning));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      text-shadow: 0 0 20px rgba(255,0,0,0.7);
+      letter-spacing: 3px;
+      text-transform: uppercase;
+    }
+    .cta-main {
+      display: inline-block;
+      padding: 12px 22px;
+      background: linear-gradient(90deg, var(--alert), var(--warning));
+      color: #000;
+      border-radius: var(--radius);
+      text-decoration: none;
+      font-weight: 700;
+      box-shadow: 0 0 14px rgba(255,0,0,0.4);
+    }
+    /* SECTION – spacing DIRAPATKAN */
+    .section {
+      padding: 28px 6%; /* dulunya 40px */
+      text-align: center;
+    }
+    .section h2 {
+      margin-bottom: 8px;
+    }
+    .section p {
+      margin: 5px 0; /* rapat */
+    }
+    /* PREMIUM GRID */
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 22px;
+    }
+    @media (min-width: 768px) {
+      .grid { grid-template-columns: repeat(3, 1fr); }
+    }
+    @media (min-width: 1024px) {
+      .grid { grid-template-columns: repeat(4, 1fr); }
+    }
+    /* PREMIUM CARDS */
+    .card {
+      background: rgba(20, 0, 40, 0.6);
+      border-radius: 18px;
+      padding: 16px;
+      border: 1px solid rgba(255, 0, 80, 0.3);
+      box-shadow: 0 0 18px rgba(255,0,100,0.2);
+      transition: .25s ease;
+    }
+    .card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 0 26px rgba(255,0,150,0.5);
+    }
+    .card img {
+      width: 100%;
+      height: 110px;
+      object-fit: cover;
+      border-radius: 14px;
+      margin-bottom: 8px;
+    }
+    footer {
+      padding: 20px;
+      text-align: center;
+      color: #aaa;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+  <!-- BACKGROUND SLIDER DENGAN GEDUNG SINGAPORE -->
+  <section class="slider">
+    <img class="slide active" src="https://static.gwvkyk.com/media/17a8260c142960eda896d.png" />
+    <img class="slide" src="https://static.gwvkyk.com/media/17a8260c142960eda896d.png" />
+    <img class="slide" src="https://static.gwvkyk.com/media/17a8260c142960eda896d.png" />
+    <div class="hero-text">
+      <div>
+        <h1>TRUSTED GAMING TOP-UP PROVIDER IN SINGAPORE⚡</h1>
+        <a href="https://t.me/FelixiaAdmin" class="cta-main">Fast Fast Join Now</a>
+      </div>
+    </div>
+  </section>
+  <!-- PROMO SECTION -->
+  <section class="section" id="promo">
+    <h2>Hot Bonus Promo Lah 🔥</h2>
+    <div class="grid">
+      <div class="card">
+        <img src="https://static.gwvkyk.com/media/ed51c14e142961201841c.png" />
+        <div>Singapore No.1 Trusted Site</div>
+        <a href="https://1playsg.vip/RFONEPLAYLUCIA2" class="cta-main">Claim</a>
+      </div>
+      <div class="card">
+        <img src="https://static.gwvkyk.com/media/327d120f1429637b21007.png" />
+        <div>Recommend Deposit High Bonus</div>
+        <a href=" https://mbs888.online/RFMBSOLIVER" class="cta-main">Unlock</a>
+      </div>
+      <div class="card">
+        <img src="https://static.gwvkyk.com/media/fd10714f1429611a3a7e8.jpg" />
+        <div>Highly Recommended Trusted Company</div>
+        <a href=" https://ge88s.club/RFGE88RORA" class="cta-main">Join</a>
+      </div>
+      <div class="card">
+        <img src="https://static.gwvkyk.com/media/1cfdcfc0242962aec6767.jpg" />
+        <div>Highly Recommended Trusted Company</div>
+        <a href=" https://koi8.me/RFKOI8JENNA" class="cta-main">Join</a>
+      </div>
+    </div>
+  </section>
+  <!-- GAME LIST -->
+  <section class="section" id="games">
+    <h2>Game List 🎮</h2>
+    <p>Slots • Live Casino • Sports • 4D • Fishing</p>
+  </section>
+  <!-- FAQ -->
+  <section class="section" id="faq">
+    <h2>FAQ ❓</h2>
+    <p><strong>Q:</strong> Safe or not?<br><strong>A:</strong> Confirm safe lah!</p>
+    <p><strong>Q:</strong> How to claim bonus?<br><strong>A:</strong> Click any button and message support!</p>
+  </section>
+  <!-- CONTACT -->
+  <section class="section" id="contact">
+    <h2>Contact Us 📞</h2>
+    <p>Live Chat 24/7 — We reply fast! ⚡</p>
+    <a href="https://wa.me/6590432424" class="cta-main">Message Now</a>
+  </section>
+  <script>
+    let index = 0;
+    setInterval(() => {
+      let slides = document.querySelectorAll('.slide');
+      slides[index].classList.remove('active');
+      index = (index + 1) % slides.length;
+      slides[index].classList.add('active');
+    }, 4000);
+  </script>
+</body>
+</html>
